@@ -2,6 +2,7 @@ package org.viktor_kapustianyk;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.time.Instant;
 import java.util.*;
@@ -146,6 +147,7 @@ public class DocumentManager {
 
     @Data
     @Builder
+    @EqualsAndHashCode
     public static class Document {
         private String id;
         private String title;
@@ -156,6 +158,7 @@ public class DocumentManager {
 
     @Data
     @Builder
+    @EqualsAndHashCode
     public static class Author {
         private String id;
         private String name;
